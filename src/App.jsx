@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className='app h-screen m-0'>
       <Header/>
-      <div className="section relative top-16 bg-blue-500 h-[calc(100vh-64px)] snap-mandatory snap-y overflow-scroll scroll-smooth">
+      <div className="section relative top-16 bg-blue-500 h-[calc(100vh-64px)] snap-mandatory snap-y overflow-scroll scroll-smooth scrollbar-hide">
         <Hero/>
         <Work/>
         <Cards/>
