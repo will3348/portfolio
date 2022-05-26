@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      'Ubuntu':['Ubuntu']
+    }
   },
   plugins: [
     require('tailwind-scrollbar-hide')
