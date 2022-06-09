@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      'Ubuntu':['Ubuntu']
+      'Ubuntu':['Ubuntu'],
+      'cursive':['Indie Flower', 'cursive']
+      
     },
     screens: {
       'xs': '240px',

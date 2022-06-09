@@ -3,8 +3,8 @@ import React from 'react'
 export default function hero() {
   return (
     <div className='heroSection bg-gray-300 w-full h-[calc(100vh-64px)] snap-start sm:flex flex-col md:grid grid-cols-3' id='hero'>
-      <div className="right bg-yellow-100  md:col-span-2">
-          <div className="hero-image-wrapper flex justify-center sm: md:relative top-32">
+      <div className="right bg-yellow-100  md:col-span-2 flex justify-center items-center">
+          <div className="hero-image-wrapper h-2/3 flex justify-center">
             <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg" alt="" />
           </div>
       </div>

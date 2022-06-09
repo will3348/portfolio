@@ -1,12 +1,11 @@
 import React from 'react'
 import Navigation from '../navibar/Navigation'
-import logo from '../../logo_transparent.png'
 
 
 export default function header() {
   return (
-    <div className='header bg-red-300  fixed top-0  w-full h-16 z-10 '>
-      <div className='title '><img src="{logo}" alt="123" /></div>
+    <div className='header bg-red-300  fixed top-0  w-full  h-16 z-10 '>
+      <div className='title h-10 font-cursive font-extrabold text-3xl pt-5 pl-5 flex items-center '><span><a href='#hero'>Tengyuan's Portfolio Website</a></span></div>
       <Navigation/>
     </div>
   )
