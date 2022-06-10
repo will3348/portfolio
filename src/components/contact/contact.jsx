@@ -1,13 +1,21 @@
 import React from 'react'
 import { useForm, ValidationError } from '@formspree/react'
-import contactPic from '../../contact2.png'
+import contactPic from '../../assets/img/contact2.png'
+
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrgjpdgg");
+  const goBack= () => {
+      
+  }
   if (state.succeeded) {
     return (
-      <div className='contact bg-blue-300 w-full h-[calc(100vh-64px)] snap-start' id="contact">
+      <div className='contact bg-blue-300 w-full h-[calc(100vh-64px)] snap-start flex flex-col justify-center items-center' id="contact">
+
         <p>Thanks for Contacting!</p>
+
+        <button className="goBackButton w-32 bg-yellow-100" onClick={goBack}>go back</button>
+
       </div>);
   }
   return (
@@ -20,7 +28,7 @@ export default function Contact() {
           <div className="firstName">
             <label htmlFor="firstName">
               First Name:
-            </label><br/>
+            </label><br />
             <input className="w-full rounded-lg"
               id="firstName"
               type="firstName"
@@ -30,7 +38,7 @@ export default function Contact() {
           <div className="lastName">
             <label htmlFor="lastName">
               Last Name:
-            </label><br/>
+            </label><br />
             <input className="w-full rounded-lg"
               id="lastName"
               type="lastName"
@@ -40,7 +48,7 @@ export default function Contact() {
           <div className="email">
             <label htmlFor="email">
               Email Address:
-            </label><br/>
+            </label><br />
             <input className="w-full rounded-lg"
               id="email"
               type="email"
@@ -54,9 +62,9 @@ export default function Contact() {
           </div>
 
           <div className="message">
-          <label htmlFor="message">
+            <label htmlFor="message">
               Message:
-            </label><br/>
+            </label><br />
             <textarea className="w-full rounded-lg lg:h-40 md:h-30 xs:h-20"
               id="message"
               name="message"

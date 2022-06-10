@@ -1,11 +1,11 @@
 import React from 'react'
-import myImage from '../../myself.jpg'
+import myImage from '../../assets/img/myselfpng2.png'
 
 export default function hero() {
   return (
     <div className='heroSection bg-gray-300 w-full h-[calc(100vh-64px)] snap-start xs:flex flex-col md:grid grid-cols-3' id='hero'>
       <div className="right bg-green-100 overflow-hidden md:col-span-2 flex justify-center items-center">
-          <div className="hero-image-wrapper rounded-2xl shadow-2xl overflow-hidden flex justify-center">
+          <div className="hero-image-wrapper rounded-2xl overflow-hidden flex justify-center">
             <img src={myImage} alt="" />
           </div>
       </div>
