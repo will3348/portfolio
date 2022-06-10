@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function cards(props) {
   return (
-    <div className='CardTemplate xl:w-1/5 h-3/4 bg-green-100 rounded-3xl overflow-hidden shadow-2xl sm:'>
+    <div className='CardTemplate lg:w-1/5 h-3/4 bg-green-100 rounded-3xl overflow-hidden shadow-2xl xs:w-5/6'>
       <div className="imgWrapper w-full h-2/3 bg-red-100">
         {props.img}
       </div>
