@@ -15,8 +15,8 @@ export default function Contact() {
       <div className="left w-1/2 flex justify-center items-center">
         <img src={contactPic} alt="pic" />
       </div>
-      <div className="formSection w-1/2 flex justify-center">
-        <form className="form w-3/5 flex flex-col xl:gap-y-5 lg:gap-y-4 md:gap-y-3 sm:gap-y-2" onSubmit={handleSubmit}>
+      <div className="formSection w-1/2 h-sreen flex justify-center ">
+        <form className="form w-3/5 flex flex-col mt-3 xl:gap-y-5 lg:gap-y-1 md:gap-y-1 sm:gap-y-1" onSubmit={handleSubmit}>
           <div className="firstName">
             <label htmlFor="firstName">
               First Name:
@@ -57,7 +57,7 @@ export default function Contact() {
           <label htmlFor="message">
               Message:
             </label><br/>
-            <textarea className="w-full md:h-60 rounded-lg md:h-40 xs:h-30"
+            <textarea className="w-full rounded-lg lg:h-40 md:h-30 xs:h-20"
               id="message"
               name="message"
             />
