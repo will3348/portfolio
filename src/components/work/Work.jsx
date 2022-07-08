@@ -1,7 +1,6 @@
 import React from 'react'
 import Workcard from './Workcard'
 import tic from '../../assets/img/ticpic.png'
-import psri from '../../assets/img/psri.png'
 import grouppic from '../../assets/img/group-project.png'
 
 
