@@ -12,8 +12,8 @@ export default function App() {
       <Header />
       <div className="section relative top-16 bg-blue-500 h-[calc(100vh-64px)] snap-mandatory snap-y overflow-scroll scroll-smooth scrollbar-hide">
         <Hero />
-        <Work />
         <Cards />
+        <Work />
         <Contact />
       </div>
       <Footer />
