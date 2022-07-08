@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function cards(props) {
   return (
-    <div className="max-w-sm bg-white rounded-xl  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="max-w-lg bg-white rounded-xl  border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
     <a href={props.link}>
     <img src={props.image} alt="" />
     </a>
