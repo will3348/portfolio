@@ -5,16 +5,19 @@ import contactPic from '../../assets/img/contact2.png'
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("mrgjpdgg");
+  // reset contact页面的状态
   const goBack= () => {
-      
+      window.location.href = '#hero'
+     window.location.reload()
+    
   }
   if (state.succeeded) {
     return (
       <div className='contact bg-blue-300 w-full h-[calc(100vh-64px)] snap-start flex flex-col justify-center items-center' id="contact">
 
-        <p>Thanks for Contacting!</p>
+        <p className='lg:text-3xl p-16  sm:text-xl p-10  xs:text-lg p-6 '>Thanks for Contacting!</p>
 
-        <button className="goBackButton w-32 bg-yellow-100" onClick={goBack}>go back</button>
+        <button className="goBackButton rounded-xl w-32 bg-yellow-200 hover:bg-yellow-300" onClick={goBack}>Go Back</button>
 
       </div>);
   }
