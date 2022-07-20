@@ -49,11 +49,14 @@ export default function Work() {
 
           <Workcard image={current.currentImg} title={current.currentTitle} description={current.currentDescription} link={current.currentLink} />
 
-          <div className=''>
-            <h1>Page {page}</h1>
-            <button onClick={() => { setPage(Math.max(1, page - 1)) }}>Previous</button>
-            <button onClick={() => { setPage(Math.max(2, page - 1)) }}>Next</button>
+          <div className='w-full flex justify-center'>
+            <h1 className='mx-0 my-auto '>Page {page}</h1>
           </div>
+          <div className='w-full flex justify-around'>
+            <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={() => { setPage(Math.max(1, page - 1)) }}>Previous</button>
+            <button className='bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow' onClick={() => { setPage(Math.max(2, page - 1)) }}>N e x t</button>
+          </div>
+          
         </div>
       </div>
 
